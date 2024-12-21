@@ -1,0 +1,128 @@
+.navbar {
+  position: absolute; /* Durante la sección hero */
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+  transition: all var(--transition-speed) ease;
+  background: transparent;
+}
+
+.navbar.fixed {
+  position: fixed; /* Después de la sección hero */
+  background: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar.fixed .navbar__brand,
+.navbar.fixed .navbar__main-menu a,
+.navbar.fixed .navbar__tools a {
+  color: black;
+}
+
+.navbar__brand {
+  font-size: 24px;
+  font-weight: 700;
+  color: var(--secondary-color);
+  transition: color var(--transition-speed) ease;
+}
+
+.navbar__main-menu,
+.navbar__tools {
+  font-weight: bold;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.navbar__main-menu a,
+.navbar__tools a {
+  text-decoration: none;
+  color: var(--secondary-color);
+  transition: color var(--transition-speed) ease;
+}
+
+.navbar__tools svg {
+  stroke: var(--secondary-color);
+  transition: stroke var(--transition-speed) ease;
+}
+
+.navbar__menu-button {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  color: var(--secondary-color);
+}
+
+/* Hover states */
+.navbar:hover {
+  background: var(--secondary-color);
+}
+
+.navbar:hover .navbar__brand,
+.navbar:hover .navbar__main-menu a,
+.navbar:hover .navbar__tools a {
+  color: var(--primary-color);
+}
+
+.navbar:hover .navbar__tools svg {
+  stroke: var(--primary-color);
+}
+
+/* Media Query para móviles */
+@media (max-width: 768px) {
+  .navbar {
+    padding: 15px 20px;
+  }
+
+  .navbar__menu-button {
+    display: block;
+    order: 1;
+  }
+
+  .navbar__brand {
+    order: 2;
+    font-size: 20px;
+  }
+
+  .navbar__main-menu {
+    display: none;
+  }
+
+  .navbar__tools {
+    order: 3;
+    gap: 15px;
+  }
+
+  .navbar__language {
+    display: none;
+  }
+}
+
+/* Media Query para pantallas grandes */
+@media (min-width: 769px) {
+  .navbar__menu-button {
+    display: none;
+  }
+
+  .navbar__brand {
+    order: 1;
+  }
+
+  .navbar__main-menu {
+    order: 2;
+    display: flex;
+  }
+
+  .navbar__tools {
+    order: 3;
+    display: flex;
+  }
+}

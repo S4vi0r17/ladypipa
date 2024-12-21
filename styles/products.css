@@ -1,0 +1,125 @@
+.collection {
+  padding: 4rem 0;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.collection-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.collection-header h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  font-family: 'Inter', sans-serif;
+  font-weight: 300;
+}
+
+.subtitle {
+  color: #666;
+  font-family: 'Inter', sans-serif;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.product-card {
+  position: relative;
+}
+
+.product-image {
+  position: relative;
+  overflow: hidden;
+}
+
+.product-image img {
+  width: 100%;
+  height: auto;
+  transition: transform 0.3s ease;
+}
+
+.product-image:hover img {
+  transform: scale(1.05);
+}
+
+.product-info-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.wishlist-btn {
+  top: 1rem;
+  right: 1rem;
+  background: white;
+  border: none;
+  padding: 0.5rem;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.quick-add-btn {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: white;
+  border: none;
+  padding: 1rem;
+  text-transform: uppercase;
+  font-family: 'Inter', sans-serif;
+  font-size: 0.875rem;
+  opacity: 0;
+  transform: translateY(100%);
+  transition: all 0.3s ease;
+}
+
+.product-card:hover .quick-add-btn {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.product-info {
+  padding: 1rem 0;
+}
+
+.product-info h3 {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.price {
+  color: #666;
+  font-family: 'Inter', sans-serif;
+}
+
+.size-options {
+  margin-top: 0.5rem;
+  font-size: 0.875rem;
+  color: #666;
+}
+
+.size-options span {
+  display: inline-block;
+  margin-right: 1rem;
+}
+
+@media (max-width: 768px) {
+  .collection {
+    padding: 2rem 1rem;
+  }
+
+  .collection-header h2 {
+    font-size: 2rem;
+  }
+
+  .product-grid {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  }
+}
