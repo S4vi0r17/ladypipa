@@ -20,7 +20,8 @@
 
 .navbar.fixed .navbar__brand,
 .navbar.fixed .navbar__main-menu a,
-.navbar.fixed .navbar__tools a {
+.navbar.fixed .navbar__tools a,
+.navbar.fixed .navbar__menu-button {
   color: black;
 }
 
@@ -68,7 +69,8 @@
 
 .navbar:hover .navbar__brand,
 .navbar:hover .navbar__main-menu a,
-.navbar:hover .navbar__tools a {
+.navbar:hover .navbar__tools a,
+.navbar:hover .navbar__menu-button {
   color: var(--primary-color);
 }
 
@@ -106,7 +108,6 @@
   }
 }
 
-/* Media Query para pantallas grandes */
 @media (min-width: 769px) {
   .navbar__menu-button {
     display: none;
