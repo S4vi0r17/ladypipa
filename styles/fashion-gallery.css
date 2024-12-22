@@ -1,0 +1,78 @@
+.been-carousel-gallery {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  padding: 80px 48px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.been-carousel-track {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.been-carousel-slide {
+  width: 300px;
+  height: 350px;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.been-carousel-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.been-carousel-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 40px;
+  height: 40px;
+  background-color: rgba(255, 255, 255, 0.8);
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.been-carousel-button.prev {
+  left: 10px;
+}
+
+.been-carousel-button.next {
+  right: 10px;
+}
+
+.been-carousel-button svg {
+  width: 24px;
+  height: 24px;
+  fill: none;
+  stroke: #333;
+  stroke-width: 2;
+}
+
+.been-carousel-gallery:hover .been-carousel-button:not(.hidden) {
+  display: flex;
+}
+
+@media (max-width: 1200px) {
+  .been-carousel-slide {
+    width: 250px;
+    height: 300px;
+  }
+}
+
+@media (max-width: 768px) {
+  .been-carousel-slide {
+    width: 200px;
+    height: 250px;
+  }
+}
