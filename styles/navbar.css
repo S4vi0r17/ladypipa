@@ -6,6 +6,7 @@
   padding: 20px 40px;
   display: flex;
   justify-content: space-between;
+  gap: 15px;
   align-items: center;
   z-index: 100;
   transition: all var(--transition-speed) ease;
