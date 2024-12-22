@@ -10,6 +10,13 @@
       href="https://fonts.googleapis.com/css2?family=Delius&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="stylesheet" href="styles/base.css" />
     <link rel="stylesheet" href="styles/navbar.css" />
     <link rel="stylesheet" href="styles/carousel.css" />
@@ -18,6 +25,8 @@
     <link rel="stylesheet" href="styles/categories.css" />
     <link rel="stylesheet" href="styles/custom-product-cards.css" />
     <link rel="stylesheet" href="styles/carousel2.css" />
+
+    <link rel="stylesheet" href="styles/footer.css" />
   </head>
   <body>
     <div class="hero">
@@ -336,11 +345,192 @@
       <div class="carousel2-dots"></div>
     </div>
 
+    <footer class="main-footer">
+      <div class="footer-grid">
+        <!-- About Us Section -->
+        <div class="footer-section">
+          <h4>ABOUT US</h4>
+          <ul>
+            <li><a href="#">About us</a></li>
+            <li><a href="#">Size guide</a></li>
+            <li><a href="#">FAQs</a></li>
+          </ul>
+        </div>
+
+        <!-- Customer Service Section -->
+        <div class="footer-section">
+          <h4>CUSTOMER SERVICE</h4>
+          <ul>
+            <li><a href="#">Return my order</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Payment methods</a></li>
+          </ul>
+        </div>
+
+        <!-- Legal Information Section -->
+        <div class="footer-section">
+          <h4>LEGAL INFORMATION</h4>
+          <ul>
+            <li><a href="#">Legal warning</a></li>
+            <li><a href="#">Cookies policy</a></li>
+            <li><a href="#">Privacy policy</a></li>
+            <li><a href="#">Payment in 3 installments with Klarna</a></li>
+          </ul>
+        </div>
+
+        <!-- Newsletter Section -->
+        <div class="footer-section newsletter">
+          <h4>NEWSLETTER</h4>
+          <form id="newsletter-form">
+            <p>
+              Sign up to receive our news and offers. You can unsubscribe at any
+              time.
+            </p>
+            <div class="input-wrapper">
+              <input type="email" placeholder="E-mail" required />
+              <button type="submit" aria-label="Submit">
+                <span>→</span>
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div class="social-links">
+          <a href="#" aria-label="Instagram">
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a href="#" aria-label="TikTok">
+            <i class="fab fa-tiktok"></i>
+          </a>
+        </div>
+
+        <div class="language-selector">Peru (PEN S/.) | EN</div>
+      </div>
+
+      <div class="footer-bottom">
+        <div class="copyright">© 2024, Lady Pipa</div>
+        <div class="payment-methods">
+          <img src="path-to-klarna.svg" alt="Klarna" />
+          <img src="path-to-amex.svg" alt="American Express" />
+          <img src="path-to-apple-pay.svg" alt="Apple Pay" />
+          <img src="path-to-maestro.svg" alt="Maestro" />
+          <img src="path-to-mastercard.svg" alt="Mastercard" />
+          <img src="path-to-paypal.svg" alt="PayPal" />
+          <img src="path-to-shop-pay.svg" alt="Shop Pay" />
+          <img src="path-to-union-pay.svg" alt="Union Pay" />
+          <img src="path-to-visa.svg" alt="Visa" />
+        </div>
+      </div>
+    </footer>
+
+    <!-- Newsletter Modal -->
+    <div id="newsletter-modal" class="modal">
+      <div class="modal-content">
+        <span class="close-modal">&times;</span>
+        <div class="modal-header">
+          <h2>¡Únete a nuestra comunidad!</h2>
+          <p>
+            Personaliza tu experiencia y mantente al día con nuestras últimas
+            novedades
+          </p>
+        </div>
+        <div class="modal-body">
+          <div class="preferences-section">
+            <h3>¿Qué te interesa?</h3>
+            <div class="interests-grid">
+              <label class="interest-card">
+                <input
+                  type="checkbox"
+                  name="modal-interests"
+                  value="new-arrivals"
+                />
+                <span class="card-content">
+                  <i class="fas fa-tshirt"></i>
+                  <span>Nuevas Colecciones</span>
+                </span>
+              </label>
+              <label class="interest-card">
+                <input type="checkbox" name="modal-interests" value="sales" />
+                <span class="card-content">
+                  <i class="fas fa-tag"></i>
+                  <span>Ofertas Exclusivas</span>
+                </span>
+              </label>
+              <label class="interest-card">
+                <input type="checkbox" name="modal-interests" value="trends" />
+                <span class="card-content">
+                  <i class="fas fa-star"></i>
+                  <span>Tendencias</span>
+                </span>
+              </label>
+              <label class="interest-card">
+                <input
+                  type="checkbox"
+                  name="modal-interests"
+                  value="sustainable"
+                />
+                <span class="card-content">
+                  <i class="fas fa-leaf"></i>
+                  <span>Moda Sostenible</span>
+                </span>
+              </label>
+            </div>
+
+            <div class="frequency-preference">
+              <h3>¿Con qué frecuencia quieres recibir noticias?</h3>
+              <div class="frequency-options">
+                <label>
+                  <input type="radio" name="frequency" value="weekly" checked />
+                  <span>Semanal</span>
+                </label>
+                <label>
+                  <input type="radio" name="frequency" value="biweekly" />
+                  <span>Quincenal</span>
+                </label>
+                <label>
+                  <input type="radio" name="frequency" value="monthly" />
+                  <span>Mensual</span>
+                </label>
+              </div>
+            </div>
+
+            <div class="additional-preferences">
+              <label class="custom-checkbox">
+                <input type="checkbox" name="new-products" checked />
+                <span class="checkbox-text"
+                  >Notificarme sobre nuevos productos</span
+                >
+              </label>
+              <label class="custom-checkbox">
+                <input type="checkbox" name="exclusive-offers" />
+                <span class="checkbox-text"
+                  >Quiero recibir ofertas exclusivas para suscriptores</span
+                >
+              </label>
+              <label class="custom-checkbox">
+                <input type="checkbox" name="events" />
+                <span class="checkbox-text"
+                  >Informarme sobre eventos y showrooms</span
+                >
+              </label>
+            </div>
+          </div>
+          <button id="confirm-preferences" class="submit-preferences">
+            Confirmar Preferencias
+          </button>
+        </div>
+      </div>
+    </div>
+
     <script src="scripts/carousel.js"></script>
     <script src="scripts/navbar.js"></script>
     <script src="scripts/menu.js"></script>
     <script src="scripts/products.js"></script>
     <script src="scripts/custom-product-cards.js"></script>
     <script src="scripts/carousel2.js"></script>
+
+    <script src="scripts/footer.js"></script>
   </body>
 </html>
