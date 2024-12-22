@@ -1,28 +1,28 @@
-.carousel {
+.carousel2 {
   height: 100vh;
   position: relative;
   overflow: hidden;
   cursor: none;
 }
 
-.carousel-track {
+.carousel2-track {
   height: 100%;
   display: flex;
   transition: transform 0.5s ease-in-out;
 }
 
-.slide {
+.slide2 {
   min-width: 100%;
   height: 100%;
 }
 
-.slide img {
+.slide2 img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
 
-.custom-cursor {
+.custom2-cursor {
   width: 50px;
   height: 50px;
   background: rgba(255, 255, 255, 0.8);
@@ -37,11 +37,11 @@
   z-index: 1000;
 }
 
-.carousel:hover .custom-cursor {
+.carousel2:hover .custom2-cursor {
   display: flex;
 }
 
-.carousel-dots {
+.carousel2-dots {
   position: absolute;
   bottom: 20px;
   left: 95%;
@@ -51,7 +51,7 @@
   gap: 12px;
 }
 
-.dot {
+.dot2 {
   width: 8px;
   height: 8px;
   border-radius: 4px;
@@ -60,12 +60,12 @@
   transition: all 0.3s ease-in-out;
 }
 
-.dot.active {
+.dot2.active {
   width: 24px;
   background: white;
 }
 
-.dot:not(.active):hover {
+.dot2:not(.active):hover {
   background: rgba(255, 255, 255, 0.8);
   transform: scale(1.2);
 }
