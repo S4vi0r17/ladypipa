@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="styles/products.css" />
     <link rel="stylesheet" href="styles/mobile.css" />
     <link rel="stylesheet" href="styles/categories.css" />
+    <link rel="stylesheet" href="styles/custom-product-cards.css" />
   </head>
   <body>
     <div class="hero">
@@ -187,9 +188,138 @@
       </div>
     </div>
 
+    <div class="custom-product-cards-gallery">
+      <div class="custom-product-cards-image-viewer">
+        <img
+          src="./assets/images/custom/left.jpg"
+          alt="Main product image"
+          class="custom-product-cards-viewer-image"
+        />
+        <div class="custom-product-cards-dots">
+          <div class="custom-product-cards-dot" data-index="0">
+            <div class="custom-product-cards-dot-highlight"></div>
+            <div class="custom-product-cards-dot-center"></div>
+          </div>
+          <div class="custom-product-cards-dot" data-index="1">
+            <div class="custom-product-cards-dot-highlight"></div>
+            <div class="custom-product-cards-dot-center"></div>
+          </div>
+          <div class="custom-product-cards-dot" data-index="2">
+            <div class="custom-product-cards-dot-highlight"></div>
+            <div class="custom-product-cards-dot-center"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="custom-product-cards-container">
+        <div class="custom-product-card active">
+          <div class="custom-product-card-image-container">
+            <img
+              src="./assets/images/custom/card1.webp"
+              alt="Product view 1"
+              class="custom-product-card-image main"
+            />
+            <img
+              src="./assets/images/custom/card1hover.webp"
+              alt="Product view 1 hover"
+              class="custom-product-card-image hover"
+            />
+            <div class="custom-product-card-size-bar">
+              <h4>Add size</h4>
+              <div class="custom-product-card-size-row">
+                <span class="custom-product-card-size">XL</span>
+                <span class="custom-product-card-size">L</span>
+                <span class="custom-product-card-size">M</span>
+                <span class="custom-product-card-size">S</span>
+                <span class="custom-product-card-size">XS</span>
+              </div>
+              <div class="custom-product-card-size-row">
+                <span class="custom-product-card-size">3XL</span>
+                <span class="custom-product-card-size">2XL</span>
+              </div>
+            </div>
+          </div>
+          <h3 class="custom-product-card-title">DUNE TOP</h3>
+          <p class="custom-product-card-price">S/. 395.00</p>
+        </div>
+
+        <div class="custom-product-card">
+          <div class="custom-product-card-image-container">
+            <img
+              src="./assets/images/custom/card2.webp"
+              alt="Product view 2"
+              class="custom-product-card-image main"
+            />
+            <img
+              src="./assets/images/custom/card2hover.webp"
+              alt="Product view 2 hover"
+              class="custom-product-card-image hover"
+            />
+            <div class="custom-product-card-size-bar">
+              <h4>Add size</h4>
+              <div class="custom-product-card-size-row">
+                <span class="custom-product-card-size">XL</span>
+                <span class="custom-product-card-size">L</span>
+                <span class="custom-product-card-size">M</span>
+                <span class="custom-product-card-size">S</span>
+                <span class="custom-product-card-size">XS</span>
+              </div>
+              <div class="custom-product-card-size-row">
+                <span class="custom-product-card-size">3XL</span>
+                <span class="custom-product-card-size">2XL</span>
+              </div>
+            </div>
+          </div>
+          <h3 class="custom-product-card-title">DUNE DRESS</h3>
+          <p class="custom-product-card-price">S/. 495.00</p>
+        </div>
+
+        <div class="custom-product-card">
+          <div class="custom-product-card-image-container">
+            <img
+              src="./assets/images/custom/card3.webp"
+              alt="Product view 3"
+              class="custom-product-card-image main"
+            />
+            <img
+              src="./assets/images/custom/card3hover.webp"
+              alt="Product view 3 hover"
+              class="custom-product-card-image hover"
+            />
+            <div class="custom-product-card-size-bar">
+              <h4>Add size</h4>
+              <div class="custom-product-card-size-row">
+                <span class="custom-product-card-size">XL</span>
+                <span class="custom-product-card-size">L</span>
+                <span class="custom-product-card-size">M</span>
+                <span class="custom-product-card-size">S</span>
+                <span class="custom-product-card-size">XS</span>
+              </div>
+              <div class="custom-product-card-size-row">
+                <span class="custom-product-card-size">3XL</span>
+                <span class="custom-product-card-size">2XL</span>
+              </div>
+            </div>
+          </div>
+          <h3 class="custom-product-card-title">DUNE SKIRT</h3>
+          <p class="custom-product-card-price">S/. 295.00</p>
+        </div>
+
+        <div class="custom-product-card-navigation">
+          <button class="custom-product-card-nav-button prev">
+            <span class="custom-product-card-nav-arrow">←</span>
+          </button>
+          <button class="custom-product-card-nav-button next">
+            <span class="custom-product-card-nav-arrow">→</span>
+          </button>
+        </div>
+      </div>
+    </div>
+
     <script src="scripts/carousel.js"></script>
     <script src="scripts/navbar.js"></script>
     <script src="scripts/menu.js"></script>
     <script src="scripts/products.js"></script>
+    <script src="scripts/custom-product-cards.js"></script>
   </body>
 </html>
