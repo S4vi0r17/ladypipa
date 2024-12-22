@@ -254,7 +254,7 @@
 
 .interest-card input:checked + .card-content {
   background-color: #e8f4ff;
-  border: 2px solid #007bff;
+  border: 2px solid #8b8b8b;
 }
 
 .frequency-preference {
@@ -296,7 +296,7 @@
 }
 
 .frequency-options input:checked + span {
-  background-color: #007bff;
+  background-color: #8b8b8b;
   color: white;
 }
 
@@ -315,7 +315,7 @@
 .custom-checkbox input {
   width: 18px;
   height: 18px;
-  accent-color: #007bff;
+  accent-color: #8b8b8b;
 }
 
 .checkbox-text {
@@ -326,7 +326,7 @@
 .submit-preferences {
   width: 100%;
   padding: 15px;
-  background-color: #007bff;
+  background-color: #8b8b8b;
   color: white;
   border: none;
   border-radius: 8px;
