@@ -14,12 +14,26 @@
 .slide {
   min-width: 100%;
   height: 100%;
+  position: relative; /* Necesario para posicionar el overlay */
+}
+
+.slide::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.192);
+  z-index: 1; /* Asegura que el overlay esté por encima de la imagen */
 }
 
 .slide img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  position: relative;
+  z-index: 0; /* Asegura que la imagen esté por debajo del overlay */
 }
 
 .custom-cursor {
