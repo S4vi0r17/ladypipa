@@ -228,8 +228,8 @@ function createProductCard(product) {
   const mediaElement = createMediaElement(product);
   productImage.appendChild(mediaElement);
 
-  const quickAddBtn = document.createElement('button');
-  quickAddBtn.className = 'quick-add-btn';
+  const showSizes = document.createElement('button');
+  showSizes.className = 'quick-add-btn';
 
   const sizeOptions = document.createElement('div');
   sizeOptions.className = 'size-options';
@@ -240,8 +240,8 @@ function createProductCard(product) {
     sizeOptions.appendChild(span);
   });
 
-  quickAddBtn.appendChild(sizeOptions);
-  productImage.appendChild(quickAddBtn);
+  showSizes.appendChild(sizeOptions);
+  productImage.appendChild(showSizes);
 
   const productInfo = document.createElement('div');
   productInfo.className = 'product-info';

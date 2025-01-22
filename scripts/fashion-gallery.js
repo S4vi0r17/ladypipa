@@ -9,7 +9,12 @@ document.addEventListener('DOMContentLoaded', () => {
     let slidesToShow = calculateSlidesToShow();
 
     function calculateSlidesToShow() {
-        const galleryWidth = gallery.offsetWidth - 40; // Width - gap
+        const galleryWidth = gallery.offsetWidth;
+        /*
+        const slideWidth = slides[0].offsetWidth + 20; // Width + gap
+        return Math.floor(galleryWidth / slideWidth);
+        */
+        if (galleryWidth >= 1800) return 5;
         if (galleryWidth >= 1200) return 4;
         if (galleryWidth >= 768) return 3;
         return 2;
@@ -41,7 +46,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
     window.addEventListener('resize', () => {
         slidesToShow = calculateSlidesToShow();
-        moveSlides();
         updateButtonVisibility();
     });
 

@@ -47,7 +47,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // Touch events
   shippingCarouselTrack.addEventListener('touchstart', (e) => {
-    if (window.innerWidth >= 768) return;
+    if (window.innerWidth >= 768) return; // Incluye la barra de scroll
     startX = e.touches[0].clientX;
     isDragging = true;
     shippingCarouselTrack.style.transition = 'none';
@@ -94,16 +94,6 @@ document.addEventListener('DOMContentLoaded', () => {
     shippingCarouselTrack.style.transform = `translateX(${currentShippingTranslate}%)`;
     updateShippingDots();
   });
-
-  shippingCarouselTrack.addEventListener(
-    'touchmove',
-    (e) => {
-      if (window.innerWidth < 768) {
-        e.preventDefault();
-      }
-    },
-    { passive: false }
-  );
 
   window.addEventListener('resize', () => {
     if (window.innerWidth >= 768) {
